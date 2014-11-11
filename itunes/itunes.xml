@@ -1,0 +1,41 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleitunes" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleitunes" scope="public">
+    <example>sarah lance itunes</example>
+    <tag>out.action=new Object(); </tag>
+    <item weight="2">Sarah</item>
+    <one-of>
+
+      <item>met itunes<tag>out.action.prog="play"</tag><tag>out.action._attributes.tts = "ok je lance iTunes"</tag></item>
+      <item>lance itunes<tag>out.action.prog="play"</tag><tag>out.action._attributes.tts = "ok je lance iTunes"</tag></item>
+      <item>ouvre itunes<tag>out.action.prog="play"</tag><tag>out.action._attributes.tts = "ok je lance iTunes"</tag></item>
+      <item>lecture<tag>out.action.prog="play"</tag><tag>out.action._attributes.tts = "d'accord"</tag></item>
+      <item>remet en lecture<tag>out.action.prog="play"</tag><tag>out.action._attributes.tts = "d'accord"</tag></item>
+      <item>arrete la musique<tag>out.action.prog="stop"</tag><tag>out.action._attributes.tts = "ok"</tag></item>
+      <item>met en pause<tag>out.action.prog="pause"</tag><tag>out.action._attributes.tts = "pause"</tag></item>
+      <item>pause<tag>out.action.prog="pause"</tag><tag>out.action._attributes.tts = "pause"</tag></item>
+      <item>met itunes en pause<tag>out.action.prog="pause"</tag><tag>out.action._attributes.tts = "ok"</tag></item>
+      <item>avance rapide<tag>out.action.prog="fastforward"</tag><tag>out.action._attributes.tts = "ok"</tag></item>
+      <item>retour rapide<tag>out.action.prog="rewind"</tag><tag>out.action._attributes.tts = "ok"</tag></item>
+      <item>chanson suivante<tag>out.action.prog="next"</tag><tag>out.action._attributes.tts = "suivante"</tag></item>
+      <item>chanson précédente<tag>out.action.prog="previous"</tag><tag>out.action._attributes.tts = "ok"</tag></item>
+      <item>coupe le son<tag>out.action.prog="Mute"</tag><tag>out.action._attributes.tts = "son couper"</tag></item>
+      <item>remet le son<tag>out.action.prog="Mute"</tag><tag>out.action._attributes.tts = "son remi"</tag></item>
+      <item>augmente le son<tag>out.action.prog="Up"</tag><tag>out.action._attributes.tts = "j'augmente"</tag></item>
+      <item>baisse le son<tag>out.action.prog="Down"</tag><tag>out.action._attributes.tts = "je baisse"</tag></item>
+      <item>met le son à 100<tag>out.action.prog="100"</tag><tag>out.action._attributes.tts = "son à 100 %"</tag></item>
+      <item>met le son à 70<tag>out.action.prog="70"</tag><tag>out.action._attributes.tts = "son à 70%"</tag></item>
+      <item>met le son à 50<tag>out.action.prog="50"</tag><tag>out.action._attributes.tts = "son à 50%"</tag></item>
+      <item>met le son à 25<tag>out.action.prog="25"</tag><tag>out.action._attributes.tts = "son à 25%"</tag></item>
+      <item>met le son à 0<tag>out.action.prog="0"</tag><tag>out.action._attributes.tts = "son à 0"</tag></item>
+      
+      
+      <item>met la playliste une<tag>out.action.prog="list1"</tag><tag>out.action._attributes.tts = "je lance la playlist une"</tag></item>
+      <item>met la playliste deux<tag>out.action.prog="list2"</tag><tag>out.action._attributes.tts = "je lance la playlist deux"</tag></item>
+      <item>met la playliste trois<tag>out.action.prog="list3"</tag><tag>out.action._attributes.tts = "je lance la playlist trois"</tag></item>
+
+	  	  
+    </one-of>
+	
+<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/itunes";</tag>
+  </rule>
+</grammar>

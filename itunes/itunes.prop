@@ -1,0 +1,12 @@
+{
+  "modules" : { 
+    "itunes"  : {
+      "description": "Plugin permettant de controller itunes avec Sarah basé sur le plugin S.U.D.O (Sarah Users Do Operation) de Ted Kent.",
+      "version": "1.0",
+	  "Catégorie": "Speech et keycombo",
+	  "Playlist1": "Fred",
+	  "Playlist2": "nom playlist dans itunes",
+	  "Playlist3": "nom playlist dans iutnes"
+    }
+  }
+}

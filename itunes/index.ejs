@@ -1,0 +1,77 @@
+<%- layout('/layout/modal.ejs') -%>
+
+<p>
+  Le plugin itunes permet de contoler par Sarah l'application iTunes.  
+</p>
+
+<div class="alert alert-info" role="alert">
+  <h4>Auteur</h4>
+  <p>Pottier Frédéirc. Le plugin est basé sur le plugin S.U.D.O (Sarah Users Do Operation) de Ted Kent (qui permet entre autre la lancement de .vbs) et sur la lib de Maximized Software (http://www.maximized.com/freeware/ScriptsForiTunes/). Donc Merci à eux.</p>
+</div>
+
+<!-- Navigation -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#plugin-version" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a></li>
+   
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Commandes Vocales <span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#plugin-config-tuto"  data-toggle="tab">Fonctions de Base<span</a></li>
+      <li><a href="#plugin-config-itunes"  data-toggle="tab">Fonctions avancées</a></li>
+      <li><a href="#plugin-config-aide"  data-toggle="tab">Aide</a></li>
+    </ul> 
+  </li>
+
+</ul>
+
+<div class="tab-content">
+
+<!--Version-->
+<div class="tab-pane active" id="plugin-version">
+<h4>Version 1.0</h4>
+<pre>
+[X] Gestion des commandes basics de iTunes
+[X] Gestion de 3 Playlist iTunes
+[X] A venir la gestion des Artists, des Albums et des Chansons....
+</pre>
+</div>
+
+<!--Tuto XBMC-->
+<div class="tab-pane" id="plugin-config-tuto">
+
+  <h4>Commandes de base : sarah + l'une des commandes suivantes<span class="badge">New</span></h4>
+
+<ul>
+  <li><code>met itunes</code> Cette commande lance l'application et remet en lecture après pause</li>
+  <li><code>met en pause</code> Met en pause et relance la lecture</li>
+  <li><code>arrêt la musique</code> Stop le lecture et relance la lecture au début de la chanson</li>
+  <li><code>coupe le son</code> Coupe le son de l'application</li>
+  <li><code>remet le son</code> Pas besoin d'expliquer</li>
+  <li><code>chanson suivante</code> Pas besoin d'expliquer</li>
+  <li><code>chanson précédente</code> Pas besoin d'expliquer</li>
+  <li><code>avance rapide</code> Pas besoin d'expliquer</li>
+  <li><code>retour rapide</code> Pas besoin d'expliquer</li>
+</ul>
+
+</div>
+ 
+<!--Config itunes-->
+<div class="tab-pane" id="plugin-config-itunes">
+
+  <h4>Commandes avancées : sarah + l'une des commandes suivantes</h4>
+
+<ul>
+  <li><code>met la playlist une</code> Lance la playlist1 que vous aurez configuré dans le prop. Vous pouvez entre plusieur.</li>
+  <li><code>met #l'artiste#</code> En cours ...</li>
+  <li><code>met #la chanson#</code> En cours ...</li>
+</ul>
+ 
+</div>
+
+<!--Aide-->
+<div class="tab-pane" id="plugin-config-aide"> 
+
+<h4>Aide</h4>
+
+<p>Si vous avez besoin d'aide, il faut passer par la communauté.</p>
+

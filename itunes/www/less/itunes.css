@@ -1,0 +1,8 @@
+#itunes .portlet-header,
+#itunes .portlet-footer {
+  background-color: rgba(254, 68, 76, 0.8);
+}
+#itunes .portlet-body {
+  color: #FFF;
+  background: rgba(254, 68, 76, 0.8);
+}
