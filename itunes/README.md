@@ -36,7 +36,7 @@ on top of:
 
 ## Description
 
-Laucher controls for iTunes. Plugin based on the plugin Sudo kent
+Laucher controls for iTunes. Plugin based on the plugin Sudo Ted Kent
 
 
 ## Quick Start
